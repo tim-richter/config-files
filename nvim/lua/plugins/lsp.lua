@@ -15,9 +15,10 @@ return {
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
+
     },
   },
 
-  -- LSP Formatting
+  -- Linting
   'dense-analysis/ale',
 }

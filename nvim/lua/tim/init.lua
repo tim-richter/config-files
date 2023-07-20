@@ -76,17 +76,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
--- UndoTree
-vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
-
--- ALE 
-vim.g.fix_on_save = 1
-
-vim.g.ale_fixers = {
-  ["*"] = { "remove_trailing_lines", "trim_whitespace" },
-  ['javascript'] = { 'eslint' },
-  ['typescript'] = { 'eslint' },
-  ['typescriptreact'] = { 'eslint' },
-}
-
-vim.keymap.set('n', '<leader>lf', vim.cmd.ALEFix)
+require('tim.plugins')
